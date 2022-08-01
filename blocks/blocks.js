@@ -1,92 +1,64 @@
 Blockly.defineBlocksWithJsonArray([
   {
-    "type": "kb_i2c_scanner_decimal",
-    "message0": "Decimal scl: %1 sda: %2 freq: %3",
+    "type": "dec_i2c_scanner",
+    "message0": "Address I2C Decimal scl_pin: %1 sda_pin: %2 frequency: %3 Scan",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "scl",
         "options": [
-          [
-            "SCL0",
-            "22"
-          ],
-          [
-            "SCL1",
-            "5"
-          ]
+          ["SCL0", "22"],
+          ["SCL1", "5"]
         ]
       },
       {
         "type": "field_dropdown",
         "name": "sda",
         "options": [
-          [
-            "SDA0",
-            "21"
-          ],
-          [
-            "SDA1",
-            "4"
-          ]
+          ["SDA0", "21"],
+          ["SDA1", "4"]
         ]
       },
       {
-        "type": "field_number",
+        "type": "input_value",
         "name": "freq",
-        "value": 100000,
-        "min": 1,
-        "max": 5000000
-      }
+        "check": "Number"
+      },
     ],
-    "output": null,
-    "colour": 290,
-    "tooltip": "",
+    "output": "Number",
+    "colour": "#8D44AD",
+    "tooltip": "Get address i2c decimal number from kid_bright v1.3 type array.",
     "helpUrl": ""
   },
   {
-    "type": "kb_i2c_scanner_hexadecimal",
-    "message0": "Hexadecimal scl: %1 sda: %2 freq: %3",
+    "type": "hex_i2c_scanner",
+    "message0": "Address I2C Hexadecimal scl_pin: %1 sda_pin: %2 frequency: %3 Scan",
     "args0": [
       {
         "type": "field_dropdown",
         "name": "scl",
         "options": [
-          [
-            "SCL0",
-            "22"
-          ],
-          [
-            "SCL1",
-            "5"
-          ]
+          ["SCL0", "22"],
+          ["SCL1", "5"]
         ]
       },
       {
         "type": "field_dropdown",
         "name": "sda",
         "options": [
-          [
-            "SDA0",
-            "21"
-          ],
-          [
-            "SDA1",
-            "4"
-          ]
+          ["SDA0", "21"],
+          ["SDA1", "4"]
         ]
       },
       {
-        "type": "field_number",
+        "type": "input_value",
         "name": "freq",
-        "value": 100000,
-        "min": 1,
-        "max": 5000000
-      }
+        "check": "Number"
+      },
     ],
-    "output": null,
-    "colour": 290,
-    "tooltip": "",
+    "output": "Number",
+    "colour": "#8D44AD",
+    "tooltip": "Get address i2c hexadecimal number from kid_bright v1.3 type array.",
     "helpUrl": ""
   }
 ]);
